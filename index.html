@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boredom Buster</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="theme-default">
+    <div class="gradient-background"></div>
+    <div id="app" class="container">
+      <header>
+        <h1>🎮 Boredom Buster</h1>
+        <div class="theme-switcher">
+          <button onclick="switchTheme('default')" class="glass-btn">Default</button>
+          <button onclick="switchTheme('dark')" class="glass-btn">Dark</button>
+          <button onclick="switchTheme('neon')" class="glass-btn">Neon</button>
+          <button onclick="switchTheme('retro')" class="glass-btn">Retro</button>
+        </div>
+      </header>
+
+      <div class="score-section glass-card">
+        <h2>Boredom Score: <span id="score">0</span></h2>
+        <div class="progress-bar">
+          <div id="score-progress" class="progress"></div>
+        </div>
+        <p>Current Title: <span id="title" class="highlight">Mildly Bored</span></p>
+      </div>
+
+      <div class="content-section">
+        <div class="button-grid">
+          <button onclick="getActivity()" class="action-btn glass-btn">
+            🎯 Random Activity
+          </button>
+          <button onclick="getJoke()" class="action-btn glass-btn">
+            😂 Get a Joke
+          </button>
+          <button onclick="getFact()" class="action-btn glass-btn">
+            🤓 Useless Fact
+          </button>
+          <button onclick="getAdvice()" class="action-btn glass-btn">
+            🤔 Get Advice
+          </button>
+          <button onclick="getExcuse()" class="action-btn glass-btn">
+            😅 Random Excuse
+          </button>
+        </div>
+
+        <div id="result" class="result-box glass-card">
+          <p>Click any button to get started!</p>
+        </div>
+
+        <div id="reaction" class="reaction"></div>
+      </div>
+
+      <footer class="footer glass-card">
+        <p>Made by THRISHAL DOMA</p>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
